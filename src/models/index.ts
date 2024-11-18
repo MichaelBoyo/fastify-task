@@ -4,9 +4,9 @@ import { Sequelize, DataTypes, Model } from "sequelize";
 export const sequelize = new Sequelize({
   dialect: "postgres",
   host: process.env.DB_HOST,
-  database: "fastify_task",
-  username: "username",
-  password: "password",
+  database: process.env.DB_NAME,
+  username: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
 });
 
 // Facility Model

@@ -1,6 +1,6 @@
 import fastify from "fastify";
 import { initializeDatabase } from "./models";
-import { ShiftController } from "./controllers/shift.controller";
+import { ShiftController } from "./controllers/shifts.controller";
 
 const server = fastify({ logger: true });
 const shiftController = new ShiftController();

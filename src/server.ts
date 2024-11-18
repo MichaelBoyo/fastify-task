@@ -1,5 +1,4 @@
 import fastify from "fastify";
-import { initializeDatabase } from "./models";
 import { ShiftController } from "./controllers/shifts.controller";
 
 const server = fastify({ logger: true });
@@ -14,7 +13,6 @@ server.post(
 
 // Start Server
 const startServer = async () => {
-  await initializeDatabase();
   try {
     await server.listen({ port: 3000 });
     console.log("Server running at http://localhost:3000");

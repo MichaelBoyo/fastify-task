@@ -88,7 +88,7 @@ export const initializeDatabase = async () => {
       shift_id: 2,
       facility_id: 100,
       shift_date: "2022-10-01",
-      start_time: "15:00:00",
+      start_time: "14:00:00",
       end_time: "23:00:00",
     },
     {
